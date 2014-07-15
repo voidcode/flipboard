@@ -1,11 +1,12 @@
 var bold = {
 	color: 'red',
-	x: 10,
-	y: 10,
+	x: 0,
+	y: 0,
 	width: 3,
 	heigth: 3,
 	speed: 1,
-	offset: dd,
+	dir: 180,
+	offset: false,
 	draw: function(){
 		var _gw = gw - this.width;
 		var _gh = gh - this.heigth;

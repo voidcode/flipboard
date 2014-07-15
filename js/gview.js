@@ -1,21 +1,23 @@
 			var FPS = 30;
-			var gameview = $('.gameview')[0];
-			var gw = gameview.width;
-			var gh = gameview.height;
-			var ctx = gameview.getContext('2d');
+			var gview = $('.gview')[0];
+			var gw = gview.width;
+			var gh = gview.height;
+			var ctx = gview.getContext('2d');
 			function draw() {
 				ctx.clearRect(0, 0, gw, gh);
 				bold.draw();
 			}
 			
-			//init position
-			bold.x = gw/2;
-			bold.y = gh/2;
-			bold.draw();
-			
 			//MAINLOOP********************************************************************
 			function mainloop(){
-				draw();
+				if(bold.dir == 180){
+					bold.x = bold.x + 1;
+					draw();
+				}
+				if(bold.dir == 90){
+					bold.y = bold.y + 1;
+					draw();
+				}
 			}
 			setInterval(mainloop, 1000/FPS);
 			//***************************************************************************

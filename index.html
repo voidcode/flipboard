@@ -21,7 +21,7 @@
 						<label for="password">Password</label>
 						<input type="password" class="inputPassword"/>						
 					</div>
-					<a href="#gameview-page"  data-inline="true" class="btnLogon">Log-On</a>
+					<a href="#gview-page"  data-inline="true" class="btnLogon">Log-On</a>
 				</div>
 			</div>
 			<div data-role="footer" data-position="fixed" class="ui-bar">
@@ -29,19 +29,19 @@
 			</div>
 		</div>
 		
-		<div data-role="page" data-theme="b" id="gameview-page">
+		<div data-role="page" data-theme="b" id="gview-page">
 			<div data-role="header">
 				<h1>Flipboard</h1>
 				<a href="#logonview-page" data-rel="back">Exit</a>
 			</div>
 			<div data-role="main" data-position="pixed">
-				<!-- This is where we render the gameview -->
-				<canvas class="gameview"></canvas>
+				<!-- This is where we render the gameview or gview-->
+				<canvas class="gview"></canvas>
 				<!-- jsLibs -->
 				<script src="js/key_status.js"></script>
 				<script src="js/jquery.hotkeys.js"></script>
 				<script src="js/players.js"></script>
-				<script src="js/gameview.js"></script>
+				<script src="js/gview.js"></script>
 			</div>
 		</div>
 	</body>
