@@ -16,23 +16,39 @@
 			<div data-role="main" class="ui-content">
 				<div class="logonview">
 					<div class="ui-field-contain">
-						<label for="email">Email</label>
-						<input type="email" class="inputEmail"/>
-						<label for="password">Password</label>
-						<input type="password" class="inputPassword"/>						
+						<label>Nickname:</label>
+						<input type="text" class="nickname"/>					
 					</div>
-					<a href="#gview-page"  data-inline="true" class="btnLogon">Log-On</a>
+					<a href="#playerlist-page"  data-inline="true" data-role="button" class="btnLogon">Find online players</a>
 				</div>
 			</div>
 			<div data-role="footer" data-position="fixed" class="ui-bar">
 				<h1>Copyleft 2014</h1>
 			</div>
 		</div>
-		
+		<div data-role="page" data-theme="b" id="playerlist-page">
+			<div data-role="header">
+				<h1>Online Players</h1>
+				<a href="" data-rel="back">EXIT</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<ul data-role="listview">
+					<li>
+						<a href="#gview-page">Peter</a>
+					</li>
+					<li>
+						<a href="#gview-page">Lassefatato</a>
+					</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" class="ui-bar">
+				<h1>Copyleft 2014</h1>
+			</div>
+		</div>
 		<div data-role="page" data-theme="b" id="gview-page">
 			<div data-role="header">
 				<h1>Flipboard</h1>
-				<a href="#logonview-page" data-rel="back">Exit</a>
+				<a href="#logonview-page" data-rel="back">END</a>
 			</div>
 			<div data-role="main">
 				<!-- This is where we render the gameview or gview-->
