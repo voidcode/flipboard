@@ -1,0 +1,12 @@
+-- --------------------------------------------------------------------------------
+-- Routine DDL
+-- Note: comments before and after the routine body will not be stored by the server
+-- --------------------------------------------------------------------------------
+DELIMITER $$
+
+CREATE PROCEDURE `createPlayer` (IN nickname VARCHAR(45))
+BEGIN
+	IF NOT EXISTS(SELECT * FROM Player WHERE nickname=nickname) THEN
+		INSERT INTO Player (idPlayers, nickname) VALUES (null, nickname);
+	END IF;
+END
