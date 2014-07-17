@@ -2,7 +2,7 @@
 /*THIS IS THE RESTSERVIES FOR THE FLipboard-game*/
 	require 'vendor/autoload.php';
 	$app = new Slim();
-	$app->get('/players/:nickname', 'getPlayers');
+	$app->get('/players/', 'getPlayers');
 	
 	$app->run();
 	
