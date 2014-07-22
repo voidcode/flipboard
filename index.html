@@ -1,0 +1,67 @@
+<!doctype=html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='css/core.css' type="text/css" rel='stylesheet'/>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+		<title>Filpboard</title>
+	</head>
+	<body>
+		<div data-role="page" data-theme="b" id="logonview-page">
+			<div data-role="header">
+				<h1>Flipboard</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div class="logonview">
+					<div class="ui-field-contain">
+						<label>Nickname:</label>
+						<input type="text" class="nickname"/>					
+					</div>
+					<a href="#playerlist-page"  data-inline="true" data-role="button" class="btnLogon">Find online players</a>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" class="ui-bar">
+				<h1>Copyleft 2014</h1>
+			</div>
+		</div>
+		<div data-role="page" data-theme="b" id="playerlist-page">
+			<div data-role="header">
+				<h1>Online Players</h1>
+				<a href="" data-rel="back">EXIT</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<ul data-role="listview">
+					<li>
+						<a href="#gview-page">Peter</a>
+					</li>
+					<li>
+						<a href="#gview-page">Lassefatato</a>
+					</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" class="ui-bar">
+				<h1>Copyleft 2014</h1>
+			</div>
+		</div>
+		<div data-role="page" data-theme="b" id="gview-page">
+			<div data-role="header">
+				<h1>Flipboard</h1>
+				<a href="#logonview-page" data-rel="back">END</a>
+			</div>
+			<div data-role="main">
+				<!-- This is where we render the gameview or gview-->
+				<canvas class="gview"></canvas>
+				<!-- jsLibs -->
+				<script src="js/key_status.js"></script>
+				<script src="js/jquery.hotkeys.js"></script>
+				<script src="js/players.js"></script>
+				<script src="js/gview.js"></script>
+			</div>
+			<div data-role="footer"	data-position="pixed">
+				<h1>by voidcode</h1>
+			</div>
+		</div>
+	</body>
+</html>
